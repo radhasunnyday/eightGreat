@@ -20,6 +20,11 @@
     "Compliment",
     "$state",
     complimentIndexCtrl
+  ])
+  .controller("complimentShowCtrl", [
+    "Compliment",
+    "$stateParams",
+    complimentShowCtrl
   ]);
 
   function Router($stateProvider, $locationProvider, $urlRouterProvider){
@@ -29,6 +34,12 @@
       url: "/compliments",
       templateUrl: "/public/html/comps-index.html",
       controller: "complimentIndexCtrl",
+      controllerAs: "vm"
+    })
+    .state("show", {
+      url: "/compliments/:title",
+      templateUrl: "/public/html/comps-show.html",
+      controller: "complimentShowCtrl",
       controllerAs: "vm"
     });
     $urlRouterProvider.otherwise("/");
@@ -52,6 +63,13 @@
   function complimentIndexCtrl(Compliment, $state){
     var vm = this;
     vm.compliments = Compliment.all;
+  }
+
+  function complimentShowCtrl(Compliment, $stateParams){
+    var vm = this;
+    Compliment.find("title", $stateParams.title, function(compliment){
+      vm.compliment = compliment;
+    });
   }
 
 }());
