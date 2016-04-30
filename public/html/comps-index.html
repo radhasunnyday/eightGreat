@@ -1,6 +1,7 @@
 <h1>Index Page yayyyy</h1>
 
 <div data-ng-repeat="compliment in vm.compliments">
-  <a href="/compliments/{{compliment.title}}">{{compliment.body}}</a>
+  <!-- <a href="/compliments/{{compliment.title}}">{{compliment.body}}</a> -->
+  <a data-ui-sref="show({title: compliment.title})">{{compliment.body}}</a>
   <div>{{compliment.author}}</div>
 </div>
