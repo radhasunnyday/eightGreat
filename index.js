@@ -17,7 +17,6 @@ app.engine(".hbs", hbs({
 
 app.use("/public", express.static("public"));
 app.get("/", function (req, res){
-  res.send("Hi!");
   res.render("compliments");
 });
 
