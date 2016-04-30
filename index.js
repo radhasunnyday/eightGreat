@@ -23,6 +23,11 @@ app.get("/api/compliments", function(req, res){
     res.json(compliments);
   });
 });
+app.get("/api/compliments/:title", function(req, res){
+  Compliment.findOne({title: req.params.title}).then(function(compliment){
+    res.json(compliment);
+  });
+});
 
 app.get("/*", function (req, res){
   res.render("compliments");
