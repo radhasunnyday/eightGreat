@@ -1,22 +1,26 @@
 [
   {
+    "title":"Chocolate",
     "body": "Chocolate doesn't ask questions. Chocolate understands.",
     "url": null,
     "tags": ["yum", "hungry", "quote", "craving", "stress", "hunger"]
   },
   {
+    "title":"Eleanor",
     "body": "No one can make you feel inferior without your consent",
     "author": "Eleanor Roosevelt",
     "url": null,
     "tags": ["quote", "feminist"]
   },
   {
+    "title":"Queen",
     "body": "Think like a queen. A queen is not afraid to fail. Failure is another steppingstone to greatness.",
     "author": "Oprah Winfrey",
     "url": null,
     "tags": ["fail", "success", "quote", "royalty", "failure", "feminist"]
   },
   {
+    "title":"Mermaid",
     "body": "You're a poetic, noble land-mermaid.",
     "author": "Leslie Knope",
     "url": "https://shebanirao.files.wordpress.com/2016/01/mermaid.jpg?w=920",

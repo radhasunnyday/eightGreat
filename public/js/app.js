@@ -35,7 +35,7 @@
   }
 
   function ComplimentFactory($resource){
-    var Compliment = $resource("/api/compliments/:body", {}, {
+    var Compliment = $resource("/api/compliments/:title", {}, {
       update:  {method: "PUT"}
     });
     Compliment.all = Compliment.query();

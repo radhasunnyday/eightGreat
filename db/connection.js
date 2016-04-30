@@ -2,6 +2,7 @@ var mongoose = require("mongoose");
 
 var ComplimentSchema = new mongoose.Schema(
   {
+    title: String,
     body: String,
     author: String,
     url: String,
