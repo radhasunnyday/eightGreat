@@ -1,0 +1,9 @@
+<div data-ng-if="!vm.compliment">
+  <h2>That compliment couldn't be found.</h2>
+</div>
+
+<div data-ng-if="vm.compliment">
+  <div>{{vm.compliment.body}}</div>
+  <div>{{vm.compliment.author}}</div>
+  <a href="{{vm.compliment.url}}" target="_blank">Check this out.</a>
+</div>
