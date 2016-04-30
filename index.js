@@ -16,8 +16,15 @@ app.engine(".hbs", hbs({
 }));
 
 app.use("/public", express.static("public"));
-app.get("/", function (req, res){
-  res.send("Hi!");
+app.use(parser.json({extended: true}));
+
+app.get("/api/compliments", function(req, res){
+  Compliment.find({}).then(function(comcompliments){
+    res.json(compliments);
+  });
+});
+
+app.get("/*", function (req, res){
   res.render("compliments");
 });
 
