@@ -30,6 +30,10 @@
   function Router($stateProvider, $locationProvider, $urlRouterProvider){
     $locationProvider.html5Mode(true);
     $stateProvider
+    .state("welcome", {
+      url: "/",
+      templateUrl: "/public/html/comps-welcome.html"
+    })
     .state("index", {
       url: "/compliments",
       templateUrl: "/public/html/comps-index.html",
