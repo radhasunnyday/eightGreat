@@ -67,6 +67,13 @@
   function complimentIndexCtrl(Compliment, $state){
     var vm = this;
     vm.compliments = Compliment.all;
+    vm.search = {};
+    vm.userInput = {};
+    vm.applySearch = function() {
+      console.log(vm.userInput.title);
+      vm.search = vm.userInput.title;
+      console.log(vm.search);
+    }
   }
 
   function complimentShowCtrl(Compliment, $stateParams){

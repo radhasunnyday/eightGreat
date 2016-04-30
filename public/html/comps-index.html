@@ -1,7 +1,11 @@
 <h1>Index Page yayyyy</h1>
 
-<div data-ng-repeat="compliment in vm.compliments">
-  <!-- <a href="/compliments/{{compliment.title}}">{{compliment.body}}</a> -->
+<div class="input-group">
+  <input type="text" placeholder="How ya doing?" class="form-control" data-ng-model="vm.userInput.title">
+  <span class="input-group-btn"><button class="btn btn-primary" data-ng-click="vm.applySearch()">Enter</button></span>
+</div>
+
+<div data-ng-repeat="compliment in vm.compliments | filter: vm.search">
   <a data-ui-sref="show({title: compliment.title})">{{compliment.body}}</a>
   <div>{{compliment.author}}</div>
 </div>
