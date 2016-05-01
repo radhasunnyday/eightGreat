@@ -1,8 +1,21 @@
 body {
   text-align: center;
+  background-color: lemonchiffon;
 }
 
 .input-group {
   width: 80%;
   margin: 1em auto;
+}
+
+h1{
+  font-family: ;
+}
+
+h2{
+  font-family: ;
+}
+
+div{
+  font-family: ;
 }
