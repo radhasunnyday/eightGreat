@@ -1,5 +1,13 @@
 body {
   text-align: center;
+  padding-top: 15%;
+  background-color: black;
+  color: white;
+}
+
+h4 {
+  width: 90%;
+  margin: 1em auto;
 }
 
 .input-group {
