@@ -30,12 +30,8 @@
   function Router($stateProvider, $locationProvider, $urlRouterProvider){
     $locationProvider.html5Mode(true);
     $stateProvider
-    .state("welcome", {
-      url: "/",
-      templateUrl: "/public/html/comps-welcome.html"
-    })
     .state("index", {
-      url: "/compliments",
+      url: "/",
       templateUrl: "/public/html/comps-index.html",
       controller: "complimentIndexCtrl",
       controllerAs: "vm"
@@ -67,6 +63,13 @@
   function complimentIndexCtrl(Compliment, $state){
     var vm = this;
     vm.compliments = Compliment.all;
+    vm.search = "lfjvs;djcn;s";
+    vm.userInput = {};
+    vm.applySearch = function() {
+      console.log(vm.userInput.title);
+      vm.search = vm.userInput.title;
+      console.log(vm.search);
+    }
   }
 
   function complimentShowCtrl(Compliment, $stateParams){
