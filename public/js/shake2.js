@@ -8,7 +8,7 @@
 var shakeEvent = new Shake({threshold: 15});
 shakeEvent.start();
 window.addEventListener('shake', function(){
-    alert("Shaked");
+    alert("Shaken, not stirred");
 
 }, false);
 
