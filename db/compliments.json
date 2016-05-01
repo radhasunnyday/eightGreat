@@ -26,7 +26,6 @@
     "url": "https://shebanirao.files.wordpress.com/2016/01/mermaid.jpg?w=920",
     "tags": ["funny", "bored", "ugly", "down", "no ideas", "brain farts"]
   },
-<<<<<<< HEAD
   {  "title":"Crayons",
     "body": "I consider myself a crayon, I might not be your favorite color but one day you'll need me to complete your picture.",
     "author": "Savannah Highnote",
@@ -38,7 +37,7 @@
     "author": "A lover of Sleep",
     "url": null,
     "tags": ["sleep", "dreams", "dream", "create", "inspiration", "future", "life"]
-=======
+  },
   {
     "title": "Unique",
     "body": "Always remember that you are absolutely unique. Just like everyone else.",
@@ -73,6 +72,5 @@
     "author": "Francis of Assisi",
     "url": null,
     "tags": ["faith", "believe", "belief", "unattainable"]
->>>>>>> master
   }
 ]
